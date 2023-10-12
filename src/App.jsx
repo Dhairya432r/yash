@@ -13,10 +13,11 @@ import { initialState, reducer } from './Reducer/UserReducer'
 export const UserContext = createContext()
 const Routnig = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/yash'>
       <Navbar />
       <Routes>
         <Route path="/Login" element={<Login />} />
+        <Route path="/yash" element={<Login />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Changeexpense" element={<Changeexpense />} />
         <Route path="/ManageExpense" element={<ManageExpense />} />
